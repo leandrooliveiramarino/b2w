@@ -43,6 +43,11 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 --------------------------------------------------------------*/
 
 /* Small menu. */
+.navbar-nav > li.current_page_item a,
+.navbar-nav > li.current_page_parent a {
+	color: #FFF;
+}
+
 .menu-toggle,
 .main-navigation.toggled ul {
 	display: block;
@@ -371,6 +376,10 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
 	font-size: 3em;
+}
+
+small.archive-description {
+	color: #FFF;
 }
 
 h1,h2 {
@@ -959,6 +968,20 @@ footer li.signup-link a:hover {
 	margin: 40px 0 0;
 	padding: 20px 0 0;
 	border-top: solid 1px #eee;
+}
+
+/* specific WordPress comment styles */
+#comments footer {
+	background: none;
+	color: inherit;
+}
+
+#comments footer a {
+	color: inherit;
+}
+
+#comments .comment-metadata {
+	margin: 10px 0 0;
 }
 
 /* === RESOURCES === */
