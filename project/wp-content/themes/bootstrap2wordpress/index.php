@@ -61,10 +61,10 @@ get_header();
 			================================================== -->
 		    <aside class="col-sm-4">
 		    	<?php get_sidebar(); ?>
+		    	<?php dynamic_sidebar('sidebar-2'); ?>
 		    </aside>
 		</div>
 	</div>
 
 <?php
-get_sidebar();
 get_footer();
